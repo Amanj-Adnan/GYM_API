@@ -1,5 +1,5 @@
 JSONAPI::Rails.configure do |config|
-  # # Set a default serializable class mapping.
+  # # # Set a default serializable class mapping.
   # config.jsonapi_class = Hash.new { |h, k|
   #   names = k.to_s.split('::')
   #   klass = names.pop
@@ -71,7 +71,8 @@ JSONAPI::Rails.configure do |config|
   #
   # # Set a logger.
   # config.logger = Logger.new(STDOUT)
-  #
+
   # # Uncomment the following to disable logging.
   # config.logger = Logger.new('/dev/null')
+  
 end
