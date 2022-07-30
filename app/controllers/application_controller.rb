@@ -1,5 +1,7 @@
 class ApplicationController < ActionController::API
+  include ::ActionController::Cookies
     include JsonWebToken
+
 
    def current_user
     if logged_in_user

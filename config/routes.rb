@@ -12,6 +12,11 @@ Rails.application.routes.draw do
       get "user/user_info", to:"user_infos#show"
       post "user/user_info", to:"user_infos#create"
       put "user/user_info", to:"user_infos#update"
+      
+      get "user/subscriptions", to:"user_subscriptions#index"
+      get "user/subscription", to:"user_subscriptions#show"
+      post "user/subscription", to:"user_subscriptions#create"
+      put "user/subscription", to:"user_subscriptions#update"
     end
   end
 end

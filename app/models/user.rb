@@ -1,6 +1,7 @@
 class User < ApplicationRecord
     has_secure_password
     has_one :user_info ,dependent: :destroy
+    has_many :user_subscription , dependent: :destroy
     validates :password, :presence => true,
                    :confirmation => true,
                    :length => {:within => 6..40}

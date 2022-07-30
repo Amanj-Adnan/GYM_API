@@ -5,6 +5,7 @@ class Ability
 
   def initialize(user)
     can :update, UserInfo, user: user
+    can :update, UserSubscription, user: user
 
 
     return unless user.present?

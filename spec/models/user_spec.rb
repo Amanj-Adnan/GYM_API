@@ -4,6 +4,7 @@ RSpec.describe User, type: :model do
   
   describe 'associations' do
     it { should have_one(:user_info) }
+    it { should have_one(:user_info) }
   end
 
   before(:all) do
